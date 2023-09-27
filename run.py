@@ -17,9 +17,15 @@ class Board:
         Printing letters to the board.
         Adding numbers as rows in our boardgame.
         Creating and defying the inputs on the board.
+        Make our board start with number 1.
         """
         print('  A B C D E')
         row_num = 1
         for row in self.board:
             print("%d|%s|" % (row_num, "|".join(row)))
             row_num += 1
+
+
+class Carrots:
+    def __init__(self, board):
+        self.board = board
