@@ -29,3 +29,10 @@ class Board:
 class Carrots:
     def __init__(self, board):
         self.board = board
+
+    def create_carrots(self):
+        for carrot in range(5):
+            carrot_r, carrot_cl = randint(0, 4), randint(0, 4)
+            while self.board[carrot_r][carrot_cl] == 'X':
+                carrot_r, carrot_cl = randint(0, 4), randint(0, 4)
+            self.board[carrot_r][carrot_cl] = 'X'
