@@ -89,7 +89,7 @@ def play_game():
     Creating board, duplicate answer,found a carrot/not found,
     win/loose game, turns, game over.
     """
-     print('''
+    print('''
 ========================================================================
                         Welcome to Carrotland!
 The rowdy rabbit has almost taken all of the carrots from the garden from
@@ -109,6 +109,7 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
     turns = 5
     while turns > 0:
         Board.print_board(guess_board)
+        print(f"You have {turns} turns remaining")
         user_row, user_column = Carrots.get_user_input(object)
         if guess_board.board[user_row][user_column] == "-"\
                 or guess_board.board[user_row][user_column] == "X":
@@ -127,7 +128,6 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
             game_over()
         else:
             turns -= 1
-            print(f"You have {turns} turns remaining")
             if turns == 0:
                 print("Game Over")
                 game_over()
