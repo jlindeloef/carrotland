@@ -72,7 +72,7 @@ class Carrots:
         return find_carrots
 
 
-def GameOver():
+def game_over():
     """
     End game or loose
     """
@@ -110,13 +110,13 @@ def play_game():
             
         if Carrots.find_carrots(user_guess_board) == 5:
             print("CONGRATULATION! You found all 5 carrots! Yum! carrotcake!")
-            GameOver()
+            game_over()
         else:
             turns -= 1
             print(f"You have {turns} turns remaining")
             if turns == 0:
                 print("Game Over")
-                GameOver()
+                game_over()
 
 
 if __name__ == "__main__":
