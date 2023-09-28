@@ -43,19 +43,19 @@ class Carrots:
     
     def get_user_input(self):
         """
-        The users input to game and response to inputs.
+        Get users inputs in the game and responding.
         """
         try:
-            row = input("Look for carrot on row(1-5)...: ")
-            while row not in '12345':
+            x_row = input("Look for carrot on row(1-5)...: ")
+            while x_row not in '12345':
                 print('Not valid! Select a valid row(1-5).')
-                row = input("Look for carrot on row(1-5)...: ")
-            column = input("Choose a column(A-E): ").upper()
-             while column not in "ABCDE":
+                x_row = input("Look for carrot on row(1-5)...: ")
+            y_column = input("Choose a column(A-E): ").upper()
+            while y_column not in "ABCDE":
                 print('Not valid! Select a valid column(A-E).')
-                column = input("Choose a column(A-E): ").upper()
-            return int(row) - 1, \
-                Board.letters_to_numbers(self)[column]
+                y_column = input("Choose a column(A-E): ").upper()
+            return int(x_row) - 1, \
+                Board.letters_to_numbers(self)[y_column]
         except ValueError and KeyError:
             print("Not a valid input")
             return self.get_user_input()
@@ -73,15 +73,27 @@ class Carrots:
 
 
 def GameOver():
+    user_input = input("Play again (Y/N)? ").upper()
+    if user_input == "Y":
+        Play_Game()
+    if user_input == "N":
+        print("Thank you for playing!")
+        exit()
 
 
 def Play_Game():
     computer_board = Board([[" "] * 5 for i in range(5)])
     user_guess_board = Board([[" "] * 5 for i in range(5)])
     Carrots.create_carrots(computer_board)
+    # start 10 turns
     turns = 5
-     while turns > 0:
+    while turns > 0:
         Board.print_board(user_guess_board)
         # get user input
         user_x_row, user_y_column = Carrots.get_user_input(object)
         # check if duplicate guess
+        while user_guess_board.board[user_x_row][user_y_column] == "-"\
+                or user_guess_board.board[user_x_row][user_y_column] == "X":
+            print("You searched there already")
+            user_x_row, user_y_column = Carrots.get_user_input(object)
+            # check for hit or miss
