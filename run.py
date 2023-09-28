@@ -97,3 +97,10 @@ def Play_Game():
             print("You searched there already")
             user_x_row, user_y_column = Carrots.get_user_input(object)
             # check for hit or miss
+            if computer_board.board[user_x_row][user_y_column] == "X":
+            print("YEAH! You found a carrot!")
+            user_guess_board.board[user_x_row][user_y_column] = "X"
+        else:
+            print("Sorry! No carrot!")
+            user_guess_board.board[user_x_row][user_y_column] = "-"
+            # check for win or lose
