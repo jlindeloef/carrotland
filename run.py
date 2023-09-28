@@ -42,6 +42,9 @@ class Carrots:
             self.board[carrot_r][carrot_cl] = "X"
     
     def get_user_input(self):
+        """
+        The users input to game and response to inputs.
+        """
         try:
             x_row = input("Look for carrot on row(1-5)...: ")
             while x_row not in '12345':
