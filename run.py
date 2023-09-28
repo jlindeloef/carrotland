@@ -46,16 +46,16 @@ class Carrots:
         Get users inputs in the game and responding.
         """
         try:
-            x_row = input("Look for carrot on row(1-5)...: ")
-            if x_row not in '12345':
+            row = input("Look for carrot on row(1-5)...: ")
+            if row not in '12345':
                 print("Not valid! Select a valid row(1-5).")
-                x_row = input("Look for carrot on row(1-5)...: ")
-            y_column = input("Choose a column(A-E): ").upper()
-            if y_column not in "ABCDE":
+                row = input("Look for carrot on row(1-5)...: ")
+            column = input("Choose a column(A-E): ").upper()
+            if column not in "ABCDE":
                 print("Not valid! Select a valid column(A-E).")
-                y_column = input("Choose a column(A-E): ").upper()
-            return int(x_row) - 1, \
-                Board.letters_to_numbers(self)[y_column]
+                column = input("Choose a column(A-E): ").upper()
+            return int(row) - 1, \
+                Board.letters_to_numbers(self)[column]
         except (ValueError, KeyError):
             print("Not a valid input")
             return self.get_user_input()
