@@ -134,7 +134,7 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
             If user win or loose.
             """
         if Carrots.find_carrots(guess_board) == 5:
-            print("CONGRATULATION! You found all 5 carrots! Yummy! carrotcake!")
+            print("CONGRATULATION! You found all 5 carrots! Yum! carrotcake!")
             game_over()
         else:
             turns -= 1
