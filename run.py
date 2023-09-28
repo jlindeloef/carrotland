@@ -37,9 +37,9 @@ class Carrots:
         """
         for carrot in range(5):
             carrot_r, carrot_cl = randint(0, 4), randint(0, 4)
-            while self.board[carrot_r][carrot_cl] == 'X':
+            while self.board[carrot_r][carrot_cl] == "X":
                 carrot_r, carrot_cl = randint(0, 4), randint(0, 4)
-            self.board[carrot_r][carrot_cl] = 'X'
+            self.board[carrot_r][carrot_cl] = "X"
     
     def get_user_input(self):
         try:
@@ -48,3 +48,6 @@ class Carrots:
                 print('Not valid! Select a valid row(1-5).')
                 x_row = input("Look for carrot on row(1-5)...: ")
             y_column = input("Choose a column(A-E): ").upper()
+             while y_column not in "ABCDE":
+                print('Not valid! Select a valid column(A-E).')
+                y_column = input("Choose a column(A-E): ").upper()
