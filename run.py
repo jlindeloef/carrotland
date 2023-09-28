@@ -95,18 +95,18 @@ def play_game():
     turns = 5
     while turns > 0:
         Board.print_board(guess_board)
-        user_x_row, user_y_column = Carrots.get_user_input(object)
-        if guess_board.board[user_x_row][user_y_column] == "-"\
-                or guess_board.board[user_x_row][user_y_column] == "X":
+        user_row, user_y_column = Carrots.get_user_input(object)
+        if guess_board.board[user_row][user_y_column] == "-"\
+                or guess_board.board[user_row][user_y_column] == "X":
             print("You searched there already")
-            user_x_row, user_y_column = Carrots.get_user_input(object)
+            user_row, user_y_column = Carrots.get_user_input(object)
 
-        if computer_board.board[user_x_row][user_y_column] == "X":
+        if computer_board.board[user_row][user_y_column] == "X":
             print("YEAH! You found a carrot!")
-            guess_board.board[user_x_row][user_y_column] = "X"
+            guess_board.board[user_row][user_y_column] = "X"
         else:
             print("Sorry! No carrot!")
-            guess_board.board[user_x_row][user_y_column] = "-"
+            guess_board.board[user_row][user_y_column] = "-"
             
         if Carrots.find_carrots(guess_board) == 5:
             print("CONGRATULATION! You found all 5 carrots! Yum! carrotcake!")
