@@ -61,6 +61,9 @@ class Carrots:
             return self.get_user_input()
     
     def find_carrots(self):
+        """
+        Tells what happens on the board when finding carrot.
+        """
          find_carrots = 0
         for row in self.board:
             for column in row:
