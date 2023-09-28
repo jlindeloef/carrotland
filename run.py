@@ -42,4 +42,9 @@ class Carrots:
             self.board[carrot_r][carrot_cl] = 'X'
     
     def get_user_input(self):
-        
+        try:
+            x_row = input("Look for carrot on row(1-5)...: ")
+            while x_row not in '12345':
+                print('Not valid! Select a valid row(1-5).')
+                x_row = input("Look for carrot on row(1-5)...: ")
+            y_column = input("Choose a column(A-E): ").upper()
