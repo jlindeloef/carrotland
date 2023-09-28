@@ -89,6 +89,19 @@ def play_game():
     Creating board, duplicate answer,found a carrot/not found,
     win/loose game, turns, game over.
     """
+     print('''
+========================================================================
+                        Welcome to Carrotland!
+The rowdy rabbit has almost taken all of the carrots from the garden from
+underground. He left the leaves sticking up so you don't know if there is
+a carrot attached to it.
+There are 5 carrots left! Find them before the rowdy rabbit does!
+
+        X = Found a carrot!
+        - = Only leaves!
+                            Good Luck!
+======================================================================
+''')
     computer_board = Board([[" "] * 5 for i in range(5)])
     guess_board = Board([[" "] * 5 for i in range(5)])
     Carrots.create_carrots(computer_board)
