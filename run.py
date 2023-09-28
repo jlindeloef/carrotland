@@ -76,4 +76,7 @@ def GameOver():
 
 
 def Play_Game():
-    
+    computer_board = Board([[" "] * 5 for i in range(5)])
+    user_guess_board = Board([[" "] * 5 for i in range(5)])
+    Carrots.create_carrots(computer_board)
+    turns = 5
