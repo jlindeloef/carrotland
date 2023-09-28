@@ -66,3 +66,4 @@ class Carrots:
             for column in row:
                 if column == "X":
                     find_carrots += 1
+        return find_carrots
