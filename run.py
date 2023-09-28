@@ -59,3 +59,5 @@ class Carrots:
         except ValueError and KeyError:
             print("Not a valid input")
             return self.get_user_input()
+    
+    def find_carrots(self):
