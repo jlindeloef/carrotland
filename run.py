@@ -31,6 +31,10 @@ class Carrots:
         self.board = board
 
     def create_carrots(self):
+        """
+        Random displacement of carrots on board.
+        Give the carrot the mark of "X".
+        """
         for carrot in range(5):
             carrot_r, carrot_cl = randint(0, 4), randint(0, 4)
             while self.board[carrot_r][carrot_cl] == 'X':
