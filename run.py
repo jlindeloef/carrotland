@@ -117,5 +117,3 @@ def Play_Game():
                 GameOver()
 
 
-if __name__ == '__main__':
-    Play_Game()
