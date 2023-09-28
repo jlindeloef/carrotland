@@ -40,3 +40,6 @@ class Carrots:
             while self.board[carrot_r][carrot_cl] == 'X':
                 carrot_r, carrot_cl = randint(0, 4), randint(0, 4)
             self.board[carrot_r][carrot_cl] = 'X'
+    
+    def get_user_input(self):
+        
