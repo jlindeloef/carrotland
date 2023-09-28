@@ -46,16 +46,16 @@ class Carrots:
         The users input to game and response to inputs.
         """
         try:
-            x_row = input("Look for carrot on row(1-5)...: ")
-            while x_row not in '12345':
+            row = input("Look for carrot on row(1-5)...: ")
+            while row not in '12345':
                 print('Not valid! Select a valid row(1-5).')
-                x_row = input("Look for carrot on row(1-5)...: ")
-            y_column = input("Choose a column(A-E): ").upper()
-             while y_column not in "ABCDE":
+                row = input("Look for carrot on row(1-5)...: ")
+            column = input("Choose a column(A-E): ").upper()
+             while column not in "ABCDE":
                 print('Not valid! Select a valid column(A-E).')
-                y_column = input("Choose a column(A-E): ").upper()
-            return int(x_row) - 1, \
-                Board.letters_to_numbers(self)[y_column]
+                column = input("Choose a column(A-E): ").upper()
+            return int(row) - 1, \
+                Board.letters_to_numbers(self)[column]
         except ValueError and KeyError:
             print("Not a valid input")
             return self.get_user_input()
@@ -73,3 +73,7 @@ class Carrots:
 
 
 def GameOver():
+
+
+def Play_Game():
+    
