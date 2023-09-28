@@ -112,7 +112,7 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
     Tells turns and how many remains.
     The users input and checks for same guess.
     """
-    turns = 5
+    turns = 10
     while turns > 0:
         Board.print_board(guess_board)
         print(f"You have {turns} turns remaining")
@@ -134,7 +134,7 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
             If user win or loose.
             """
         if Carrots.find_carrots(guess_board) == 5:
-            print("CONGRATULATION! You found all 5 carrots! Yum! carrotcake!")
+            print("CONGRATULATION! You found all 5 carrots! Yummy! carrotcake!")
             game_over()
         else:
             turns -= 1
