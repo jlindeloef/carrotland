@@ -90,25 +90,25 @@ def play_game():
     win/loose game, turns, game over.
     """
     computer_board = Board([[" "] * 5 for i in range(5)])
-    user_guess_board = Board([[" "] * 5 for i in range(5)])
+    guess_board = Board([[" "] * 5 for i in range(5)])
     Carrots.create_carrots(computer_board)
     turns = 5
     while turns > 0:
-        Board.print_board(user_guess_board)
+        Board.print_board(guess_board)
         user_x_row, user_y_column = Carrots.get_user_input(object)
-        if user_guess_board.board[user_x_row][user_y_column] == "-"\
-                or user_guess_board.board[user_x_row][user_y_column] == "X":
+        if guess_board.board[user_x_row][user_y_column] == "-"\
+                or guess_board.board[user_x_row][user_y_column] == "X":
             print("You searched there already")
             user_x_row, user_y_column = Carrots.get_user_input(object)
 
         if computer_board.board[user_x_row][user_y_column] == "X":
             print("YEAH! You found a carrot!")
-            user_guess_board.board[user_x_row][user_y_column] = "X"
+            guess_board.board[user_x_row][user_y_column] = "X"
         else:
             print("Sorry! No carrot!")
-            user_guess_board.board[user_x_row][user_y_column] = "-"
+            guess_board.board[user_x_row][user_y_column] = "-"
             
-        if Carrots.find_carrots(user_guess_board) == 5:
+        if Carrots.find_carrots(guess_board) == 5:
             print("CONGRATULATION! You found all 5 carrots! Yum! carrotcake!")
             game_over()
         else:
