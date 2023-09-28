@@ -80,3 +80,8 @@ def Play_Game():
     user_guess_board = Board([[" "] * 5 for i in range(5)])
     Carrots.create_carrots(computer_board)
     turns = 5
+     while turns > 0:
+        Board.print_board(user_guess_board)
+        # get user input
+        user_x_row, user_y_column = Carrots.get_user_input(object)
+        # check if duplicate guess
