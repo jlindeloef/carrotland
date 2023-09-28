@@ -128,7 +128,7 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
             print("YEAH! You found a carrot!")
             guess_board.board[user_row][user_column] = "X"
         else:
-            print("Sorry! No carrots!")
+            print("Sorry! No carrot!")
             guess_board.board[user_row][user_column] = "-"
             """
             If user win or loose.
