@@ -51,3 +51,8 @@ class Carrots:
              while y_column not in "ABCDE":
                 print('Not valid! Select a valid column(A-E).')
                 y_column = input("Choose a column(A-E): ").upper()
+            return int(x_row) - 1, \
+                Board.letters_to_numbers(self)[y_column]
+        except ValueError and KeyError:
+            print("Not a valid input")
+            return self.get_user_input()
