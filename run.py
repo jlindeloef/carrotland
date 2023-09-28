@@ -86,8 +86,7 @@ def game_over():
 
 def play_game():
     """
-    Creating board, duplicate answer,found a carrot/not found,
-    win/loose game, turns, game over.
+    Loops through the game.
     """
     print('''
 ========================================================================
