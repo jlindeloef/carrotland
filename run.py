@@ -67,3 +67,6 @@ class Carrots:
                 if column == "X":
                     find_carrots += 1
         return find_carrots
+
+
+def GameOver():
