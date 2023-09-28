@@ -104,3 +104,6 @@ def Play_Game():
             print("Sorry! No carrot!")
             user_guess_board.board[user_x_row][user_y_column] = "-"
             # check for win or lose
+        if Carrots.find_carrots(user_guess_board) == 5:
+            print("CONGRATULATION! You found all 5 carrots! Yum! carrotcake!")
+            GameOver()
