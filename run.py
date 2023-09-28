@@ -102,6 +102,7 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
                             Good Luck!
 ======================================================================
 ''')
+    print("Find the carrots! You have 10 turns!\n")
     computer_board = Board([[" "] * 5 for i in range(5)])
     guess_board = Board([[" "] * 5 for i in range(5)])
     Carrots.create_carrots(computer_board)
