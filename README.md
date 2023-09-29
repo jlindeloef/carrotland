@@ -71,12 +71,29 @@ If you press an invalid key part from expected -the game will tell you.
 ![Invalid row](https://github.com/jlindeloef/carrotland/blob/main/readme_images/Not%20valid%20row.png)
 
 
-
 + #### Game end
-  - On this section you will find the different courses the School has to offer but also the prizing.
-  - It has a different colour to stand out from the rest of the sections with bordders around every course for easy display for the user.
+After 10 turns the game ends in game over or when user found the 5 carrots.
+Either you win or loose you will always get the question if you want to play again.
 
-![Courses image](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/courses.jpg)
+##### Win game
+If the user finds the 5 carrots before the 10th turn it will win the game.
+
+![Win game](https://github.com/jlindeloef/carrotland/blob/main/readme_images/win.png)
+
+##### Loose game
+If the user does not find the carrots during the 10 turns it will be Game over.
+
+![Loose game](https://github.com/jlindeloef/carrotland/blob/main/readme_images/loose.png)
+
+##### Play again?
+If the user decides after playing the game to play again it will start from the beginning.
+If the user decides to not play the game it will exit the game.
+
+![Not play again](https://github.com/jlindeloef/carrotland/blob/main/readme_images/playagainno.png)
+
+
+
+
 
 + #### Sign up page
   - On this section the user can sign up for the school. The user have to send in name,email and phonenumber.
