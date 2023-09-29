@@ -116,7 +116,7 @@ The board displays:
   - X = If user finds a carrot.
   - Line = If user do not find a carrot.
 
-  ![xboard](https://github.com/jlindeloef/carrotland/blob/main/readme_images/xonboard.png)
+![xboard](https://github.com/jlindeloef/carrotland/blob/main/readme_images/xonboard.png)
   
 
 ### Features to Implement
@@ -124,12 +124,14 @@ Further there could be an input that gives the alternative to quit when ever the
 To enter a name and make a scoreboard for those who plays the game.
 
 ## Testing
-+ I tested the site, and it works in different web browsers: Chrome, Firefox, and Microsoft Edge.
-+ On mobile devices, I tested the my site on a Samsung Galaxy A13 with the Samsung browser and an iPhone SE with the Safari browser.
-+ I confirmed that the site is responsive and functions on different screen sizes using the devtools device toolbar.
-+ I confirmed that the navigation and the sections Home/About us, Courses and Sign up are readable and easy to understand.
-+ I confirmed that the form works: it requires entries in every field, only accepts an email in the email field, and the submit  button works.
-
+I tested the game in Heroku and Codeanywhere terminal. I validated the following:
+- Game start
+- What happens if right input
+- What happens if wrong input
+- When win games
+- when loose game
+- Invalid input
+   
 ### Validator Testing
 + HTML No errors were returned when passing through the official W3C validator
 + CSS No errors were found when passing through the official (Jigsaw) validator
