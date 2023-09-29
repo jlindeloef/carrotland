@@ -38,7 +38,7 @@ This game was created by using python coding.
   - Gives the user the story and the rules.
   - The game starts and the user can begin to play.
 
- ![Welcome.]()
+ ![Welcone](https://github.com/jlindeloef/carrotland/blob/main/readme_images/storyboard.png)
 
 + #### Game start
   - An empty gameboard displays and a text that says "Find the carrots, you have 10 turns".
@@ -49,15 +49,19 @@ This game was created by using python coding.
 
 + #### Feedback
   After users input this will display above the gameboard:
+  
   If a carrot being found on the game board:
-  - Feedback:"CONGRATULATIONS! You found a carrot!"
+  - Feedback: ![Found carrot](https://github.com/jlindeloef/carrotland/blob/main/readme_images/foundcarrot.png)
+    
   If a carrot not being found on the game board:
-  - Feedback:"Sorry! No carrot"
+  - Feedback: ![No carrot](https://github.com/jlindeloef/carrotland/blob/main/readme_images/nocarrot.png)
+    
  Under the gameboard this will be displayed:
   - Your remaining turns.
   - New inputs for another turn.
 
-![About us image](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/about-us.jpg)
+![second turn](https://github.com/jlindeloef/carrotland/blob/main/readme_images/secondturn.png)
+
 
 + #### Courses
   - On this section you will find the different courses the School has to offer but also the prizing.
