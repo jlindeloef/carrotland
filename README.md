@@ -131,9 +131,11 @@ I tested the game in Heroku and Codeanywhere terminal. I validated the following
 - When win games
 - when loose game
 - Invalid input
-   
+The both terminal shows no errors, only a warning that doesn´t affect the game.
+
+![Linter](https://github.com/jlindeloef/carrotland/blob/main/readme_images/linter%20validator.png)  ![Codeanywhere](https://github.com/jlindeloef/carrotland/blob/main/readme_images/codeanywhere.png)    
 ### Validator Testing
-+ HTML No errors were returned when passing through the official W3C validator
++ CI oython Linter
 + CSS No errors were found when passing through the official (Jigsaw) validator
 
 ### Testing using Google Lighthouse:
