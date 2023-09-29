@@ -178,6 +178,7 @@ The site was deployed to Git Hub pages using the following steps:
 
 ## Credits
 **Code:** Some code parts were taken from W3Schools (https://www.w3schools.com/), Stack Overflow (https://stackoverflow.com/) and different youtube channels modified for the purpose of my game.
+The board layout I credit Garrett Broughton on youtube.
 Ideas were also taken from The Code Institute's learning plattform and projects.
 
 ### Acknowledgements
