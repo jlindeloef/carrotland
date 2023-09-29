@@ -47,7 +47,7 @@ This game was created by using python coding.
   
 ![first input](https://github.com/jlindeloef/carrotland/blob/main/readme_images/firstdep.png)
 
-+ #### Feedback
++ #### Feedback during the game
   After users input this will display above the gameboard:
   
   If a carrot being found on the game board:
@@ -62,8 +62,17 @@ This game was created by using python coding.
 
 ![second turn](https://github.com/jlindeloef/carrotland/blob/main/readme_images/secondturn.png)
 
+If you press an invalid key part from expected -the game will tell you.
 
-+ #### Courses
+![Invalid input](https://github.com/jlindeloef/carrotland/blob/main/readme_images/not%20valid%20input.png)
+
+![Invalid column](https://github.com/jlindeloef/carrotland/blob/main/readme_images/not%20valid%20column.png)
+
+![Invalid row](https://github.com/jlindeloef/carrotland/blob/main/readme_images/Not%20valid%20row.png)
+
+
+
++ #### Game end
   - On this section you will find the different courses the School has to offer but also the prizing.
   - It has a different colour to stand out from the rest of the sections with bordders around every course for easy display for the user.
 
