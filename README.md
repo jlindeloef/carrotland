@@ -58,17 +58,22 @@ This game are for those who wants to relax and play a non complicated game.
 ![first input](https://github.com/jlindeloef/carrotland/blob/main/readme_images/firstdep.png)
 
 + #### Feedback during the game
-  After users input this will display above the gameboard:
-  
-  If a carrot being found on the gameboard:
-  - Feedback: ![Found carrot](https://github.com/jlindeloef/carrotland/blob/main/readme_images/foundcarrot.png)
+After users input this will display above the gameboard:
+If a carrot being found on the gameboard:
+
+Feedback:
+
+![Found carrot](https://github.com/jlindeloef/carrotland/blob/main/readme_images/foundcarrot.png)
+
+If a carrot not being found on the game board:
+
+Feedback:
+
+![No carrot](https://github.com/jlindeloef/carrotland/blob/main/readme_images/nocarrot.png)
     
-  If a carrot not being found on the game board:
-  - Feedback: ![No carrot](https://github.com/jlindeloef/carrotland/blob/main/readme_images/nocarrot.png)
-    
- Under the gameboard this will be displayed:
-  - Your remaining turns.
-  - New inputs for another turn.
+  Under the gameboard this will be displayed:
+     - Your remaining turns.
+     - New inputs for another turn.
 
 ![second turn](https://github.com/jlindeloef/carrotland/blob/main/readme_images/secondturn.png)
 
@@ -81,7 +86,7 @@ If you press an invalid key part from expected -the game will tell you.
 ![Invalid row](https://github.com/jlindeloef/carrotland/blob/main/readme_images/Not%20valid%20row.png)
 
 
-#### Game end
++ #### Game end
 After 10 turns the game ends in game over or when user found the 5 carrots.
 Either you win or loose you will always get the question if you want to play again.
 
@@ -101,14 +106,13 @@ If the user decides to not play the game it will exit the game.
 
 ![Not play again](https://github.com/jlindeloef/carrotland/blob/main/readme_images/playagainno.png)
 
-
 + #### Gameboard
-  The gameboard starts empty with 5 rows(1-5) and 5 columns(A-E).
+The gameboard starts empty with 5 rows(1-5) and 5 columns(A-E).
   
-  ![blank board](https://github.com/jlindeloef/carrotland/blob/main/readme_images/board.png)
+![blank board](https://github.com/jlindeloef/carrotland/blob/main/readme_images/board.png)
   
-  After the user enters their first input and press enter, the board displays the input for the next turn.
-  The board displays:
+After the user enters their first input and press enter, the board displays the input for the next turn.
+The board displays:
   - X = If user finds a carrot.
   - Line = If user do not find a carrot.
 
