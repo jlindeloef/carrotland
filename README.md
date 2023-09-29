@@ -35,10 +35,15 @@ This game are for those who wants to relax and play a non complicated game.
 - As a user I want to get rewarded on each guess if I win.
 - As a user I want clear error messages to help the me enter valid input.
 
-### Technologies
-1. Python - To create the game.
-2. app.diagram.net - To create the flowchart
-3. Balsamiq - To create a wireframe
+### Technologies and libraries
+Technologies:
+- Python to create the game.
+- app.diagram.net - To create the flowchart.
+- Codeanywhere to write the code.
+- github to store the code
+Library:
+- Random is used for the random placement of the carrots on the board.
+
 
 ## Features
 
@@ -146,24 +151,24 @@ The both terminal shows no errors, only a warning that doesn´t affect the game.
 + Unsolved bugs
   - The game has no end line as shown in the testing images.
  
- ## Deployment
+## Deployment
   I followed the steps written below to deploy my project to Heroku:
   + First created a Heroku account by flollowing the instructions given from Code Institute.
   + "Create new App".
-  + Give the App a unique name and enter region.
+  + Give the App an unique name and enter region europe.
   + Click on "Create App".
   + Click on "Settings" on your new App Dashboard.
   + Scroll down to Buildpacks and added Python and Nodejs and save changes.
   + These Buildpacks need to be in the same order as below:
-Python
-NodeJS
+    Python
+    NodeJS
 + Go to Deploy section tab and scroll down to the Deployment Method.I connect to Github pages and then could search for my Github Repository "Carrotland" and then click connect.
 + Scroll down to Automatic and Manual Deploys sections. I clicked on Manual Deployment.
 + Deploy Branch.
-+ After the project has been deployed successfully I clicked the View-button to see the program run in the terminal
++ After the project has been deployed successfully I clicked the View-button to see the program run in the terminal.
 
 In github:
-+ The site was deployed to Git Hub pages using the following steps:
+The site was deployed to Git Hub pages using the following steps:
 + After logging into GitHub I located my repository for my Portfolio Project 3.
 + I then clicked the "Settings" button at the top of my repository
 + Under General, navigate to Code and Automation and select "Pages".
@@ -172,10 +177,11 @@ In github:
 + On the top of the page, the link to the complete website is provided.
 + The deployed site will update automatically upon new commits to the master branch.
 
-  ## Credits
-  **Code:** Some code parts were taken from W3Schools (https://www.w3schools.com/), Stack Overflow (https://stackoverflow.com/) modified for the purpose of my website. 
-Some code used in "Coders Coffehouse" and "Love Running Challenge" was used and changed for my website.
+## Credits
+**Code:** Some code parts were taken from W3Schools (https://www.w3schools.com/), Stack Overflow (https://stackoverflow.com/) and different youtube channels modified for the purpose of my game..
+Ideas were also taken from The Code Institute's learning plattform and projects.
 
 ### Acknowledgements
 My mentor Medale Oluwafemi for guidance and inspiration and reviewing.
-Ideas were taken from The Code Institute's "Coders Coffee House" and "Love Running project".
+David Calikes for supporting and cheering!
+Ideas were taken from The Code Institute's learning plattform and projects.
