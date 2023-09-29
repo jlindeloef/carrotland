@@ -36,10 +36,10 @@ class Carrots:
         Give the carrot the mark of "X".
         """
         for i in range(5):
-            carrot_r, carrot_cl = randint(0, 4), randint(0, 4)
-            while self.board[carrot_r][carrot_cl] == "X":
-                carrot_r, carrot_cl = randint(0, 4), randint(0, 4)
-            self.board[carrot_r][carrot_cl] = "X"
+            carrot_row, carrot_column = randint(0, 4), randint(0, 4)
+            while self.board[carrot_row][carrot_column] == "X":
+                carrot_row, carrot_column = randint(0, 4), randint(0, 4)
+            self.board[carrot_row][carrot_column] = "X"
 
     def get_user_input(self):
         """
@@ -139,6 +139,7 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
         else:
             turns -= 1
             if turns == 0:
+                print("Sorry! The rabbit found the carrots before you did!")
                 print("Game Over")
                 game_over()
 
