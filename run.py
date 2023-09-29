@@ -36,7 +36,7 @@ class Carrots:
         Random displacement of carrots on game board.
         Give the carrot the mark of "X".
         """
-        for i in range(5):
+        for _ in range(5):
             carrot_row, carrot_column = randint(0, 4), randint(0, 4)
             while self.board[carrot_row][carrot_column] == "X":
                 carrot_row, carrot_column = randint(0, 4), randint(0, 4)
