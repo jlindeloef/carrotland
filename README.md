@@ -133,23 +133,20 @@ I tested the game in Heroku and Codeanywhere terminal. I validated the following
 - Invalid input
 The both terminal shows no errors, only a warning that doesn´t affect the game.
 
-![Linter](https://github.com/jlindeloef/carrotland/blob/main/readme_images/linter%20validator.png)  ![Codeanywhere](https://github.com/jlindeloef/carrotland/blob/main/readme_images/codeanywhere.png)    
+![Linter](https://github.com/jlindeloef/carrotland/blob/main/readme_images/linter%20validator.png)  ![Codeanywhere](https://github.com/jlindeloef/carrotland/blob/main/readme_images/codeanywhere.png)  
+
 ### Validator Testing
-+ CI oython Linter
-+ CSS No errors were found when passing through the official (Jigsaw) validator
++ CI python Linter
++ Heroku terminal
++ Codeanywhere terminal
 
-### Testing using Google Lighthouse:
-I used Google Lighthouse via devtools to assess the website.
-
-![Lighthouse image](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/lighthouse.png)
-
-  ### Bugs
+### Bugs
 + Solved bugs
-  - A column gap settings expanded the width outside the page but my mentor helped me solve it with flexbox properties.
+  - A variable showed a warning of being unused. I solved it by unnaming the variable with a underscore.
 + Unsolved bugs
-  - The fixed navigation bar covered the content when dropping down to the choosen section. I solved it by linking the navigation bar links a bit higher up on the page then it actually should be. This can be a little noticed in some screensizes.
+  - The game has no end line as shown in the testing images.
  
-  ## Deployment
+ ## Deployment
   I followed the steps written below to deploy my project to Heroku:
   + First created a Heroku account by flollowing the instructions given from Code Institute.
   + "Create new App".
