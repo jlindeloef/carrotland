@@ -50,7 +50,7 @@ This game was created by using python coding.
 + #### Feedback during the game
   After users input this will display above the gameboard:
   
-  If a carrot being found on the game board:
+  If a carrot being found on the gameboard:
   - Feedback: ![Found carrot](https://github.com/jlindeloef/carrotland/blob/main/readme_images/foundcarrot.png)
     
   If a carrot not being found on the game board:
@@ -71,7 +71,7 @@ If you press an invalid key part from expected -the game will tell you.
 ![Invalid row](https://github.com/jlindeloef/carrotland/blob/main/readme_images/Not%20valid%20row.png)
 
 
-+ #### Game end
+#### Game end
 After 10 turns the game ends in game over or when user found the 5 carrots.
 Either you win or loose you will always get the question if you want to play again.
 
@@ -92,14 +92,18 @@ If the user decides to not play the game it will exit the game.
 ![Not play again](https://github.com/jlindeloef/carrotland/blob/main/readme_images/playagainno.png)
 
 
++ #### Gameboard
+  The gameboard starts empty with 5 rows(1-5) and 5 columns(A-E).
+  
+  ![blank board](https://github.com/jlindeloef/carrotland/blob/main/readme_images/board.png)
+  
+  After the user enters their first input and press enter, the board displays the input for the next turn.
+  The board displays:
+  - X = If user finds a carrot.
+  - Line = If user do not find a carrot.
 
+  ![xboard](https://github.com/jlindeloef/carrotland/blob/main/readme_images/xonboard.png)
 
-
-+ #### Sign up page
-  - On this section the user can sign up for the school. The user have to send in name,email and phonenumber.
-  - There is a textfield for entering which instrument that are in interest. User can write multiple instruments if so will.
-
-![Sign up image](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/signup.jpg)
 
 + #### Footer
   - In the footer users find Onstage Music School contacts but also social media links.
