@@ -105,9 +105,9 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
     Creating board for game
     """
     print("Find the carrots! You have 10 turns!\n")
-    computer_board = Board([[" "] * 5 for i in range(5)])
+    game_board = Board([[" "] * 5 for i in range(5)])
     guess_board = Board([[" "] * 5 for i in range(5)])
-    Carrots.create_carrots(computer_board)
+    Carrots.create_carrots(game_board)
     """
     Tells turns and how many remains.
     The users input and checks for same guess.
@@ -124,7 +124,7 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
             """
             Checks for if user find/not find carrot.
             """
-        if computer_board.board[user_row][user_column] == "X":
+        if game_board.board[user_row][user_column] == "X":
             print("YEAH! You found a carrot!")
             guess_board.board[user_row][user_column] = "X"
         else:
@@ -134,7 +134,7 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
             If user win or loose.
             """
         if Carrots.find_carrots(guess_board) == 5:
-            print("CONGRATULATION! You found all 5 carrots! Yummy! carrotcake!")
+            print("CONGRATULATION! You found all 5 carrots! Yum! carrotcake!")
             game_over()
         else:
             turns -= 1
