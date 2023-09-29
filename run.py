@@ -44,7 +44,7 @@ class Carrots:
 
     def get_user_input(self):
         """
-        Get users inputs in the game and responding.
+        Get users inputs in the game and responding to the inputs.
         """
         try:
             row = input("Look for carrot on row(1-5)...: ")
