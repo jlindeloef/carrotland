@@ -17,9 +17,7 @@ Johan Lindelöf
 This is my first time building a game so after I decided I wanted to create a game with something visual, not only plain text, I searched around for games that had a gameboard and was created only with python. 
 I found a couple of games that I played to get in mind what a user wants while playing the game.
 
-I used Balsamiq to structure an idea for my game but it wasn't the easiest way to do it. Considering the choices users can select in the game and all the paths and turns I only manage to structure the main board and the initial choices. But the process in Balsamic gave me the name of the game and an idea of how my game board should look like. Here is my Balsamic wireframe: [Carrotland Balsamic]()
-
-To create and plan the structure of the game I made a flowchart which take me through the game and helped me with the coding. It shows the logic path throughout the game
+To create and plan the structure of the game I made a flowchart which takes me through the game and helped me with the coding. It shows the logic path throughout the game
 and can help you when you read this readme.
 
 ![Flowchart](https://github.com/jlindeloef/carrotland/blob/main/readme_images/carrotland.png)
@@ -41,6 +39,7 @@ Technologies:
 - app.diagram.net - To create the flowchart.
 - Codeanywhere to write the code.
 - github to store the code
+
 Library:
 - Random is used for the random placement of the carrots on the board.
 
@@ -82,7 +81,7 @@ Feedback:
 
 ![second turn](https://github.com/jlindeloef/carrotland/blob/main/readme_images/secondturn.png)
 
-If you press an invalid key part from expected -the game will tell you.
+If you press an invalid key part from expected -the game will tell the user.
 
 ![Invalid input](https://github.com/jlindeloef/carrotland/blob/main/readme_images/not%20valid%20input.png)
 
@@ -93,7 +92,7 @@ If you press an invalid key part from expected -the game will tell you.
 
 + #### Game end
 After 10 turns the game ends in game over or when user found the 5 carrots.
-Either you win or loose you will always get the question if you want to play again.
+Either user win or loose, the user will always get the question if to play again.
 
 ##### Win game
 If the user finds the 5 carrots before the 10th turn it will win the game.
