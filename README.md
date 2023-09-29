@@ -19,6 +19,12 @@ I found a couple of games that I played to get in mind what a user wants while p
 
 I used Balsamiq to structure an idea for my game but it wasn't the easiest way to do it. Considering the choices users can select in the game and all the paths and turns I only manage to structure the main board and the initial choices. But the process in Balsamic gave me the name of the game and an idea of how my game board should look like. Here is my Balsamic wireframe: [Carrotland Balsamic]()
 
+To create and plan the structure of the game I made a flowchart which take me through the game and helped me with the coding. It shows the logic path throughout the game
+and can help you when you read this readme.
+
+![Flowchart](https://github.com/jlindeloef/carrotland/blob/main/readme_images/carrotland.png)
+
+
 ### UX
 This game are for those who wants to relax and play a non complicated game.
 
@@ -29,8 +35,12 @@ This game are for those who wants to relax and play a non complicated game.
 - As a user I want to get rewarded on each guess if I win.
 - As a user I want clear error messages to help the me enter valid input.
 
+### Technologies
+1. Python - To create the game.
+2. app.diagram.net - To create the flowchart
+3. Balsamiq - To create a wireframe
+
 ## Features
-This game was created by using python coding.
 
 ### Existing Features
 
@@ -103,15 +113,11 @@ If the user decides to not play the game it will exit the game.
   - Line = If user do not find a carrot.
 
   ![xboard](https://github.com/jlindeloef/carrotland/blob/main/readme_images/xonboard.png)
-
-
-+ #### Footer
-  - In the footer users find Onstage Music School contacts but also social media links.
   
-![Footer image](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/footer.jpg)
 
 ### Features to Implement
-Further there could be a gallery with images and videos from concerts and lessons.
+Further there could be an input that gives the alternative to quit when ever the user want to.
+To enter a name and make a scoreboard for those who plays the game.
 
 ## Testing
 + I tested the site, and it works in different web browsers: Chrome, Firefox, and Microsoft Edge.
@@ -136,8 +142,24 @@ I used Google Lighthouse via devtools to assess the website.
   - The fixed navigation bar covered the content when dropping down to the choosen section. I solved it by linking the navigation bar links a bit higher up on the page then it actually should be. This can be a little noticed in some screensizes.
  
   ## Deployment
+  I followed the steps written below to deploy my project to Heroku:
+  + First created a Heroku account by flollowing the instructions given from Code Institute.
+  + "Create new App".
+  + Give the App a unique name and enter region.
+  + Click on "Create App".
+  + Click on "Settings" on your new App Dashboard.
+  + Scroll down to Buildpacks and added Python and Nodejs and save changes.
+  + These Buildpacks need to be in the same order as below:
+Python
+NodeJS
++ Go to Deploy section tab and scroll down to the Deployment Method.I connect to Github pages and then could search for my Github Repository "Carrotland" and then click connect.
++ Scroll down to Automatic and Manual Deploys sections. I clicked on Manual Deployment.
++ Deploy Branch.
++ After the project has been deployed successfully I clicked the View-button to see the program run in the terminal
+
+In github:
 + The site was deployed to Git Hub pages using the following steps:
-+ After logging into GitHub I located my repository for my Portfolio Project 1.
++ After logging into GitHub I located my repository for my Portfolio Project 3.
 + I then clicked the "Settings" button at the top of my repository
 + Under General, navigate to Code and Automation and select "Pages".
 + In the Build and Deployment section for Source, select 'Deploy from a branch' from the drop-down list.
