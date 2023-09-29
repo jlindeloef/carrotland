@@ -33,7 +33,7 @@ class Carrots:
 
     def create_carrots(self):
         """
-        Random displacement of carrots on board.
+        Random displacement of carrots on game board.
         Give the carrot the mark of "X".
         """
         for i in range(5):
