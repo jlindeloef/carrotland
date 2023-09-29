@@ -6,7 +6,7 @@ Carrot Land is a fun game for all ages and for those who likes carrots! You are 
 
 Johan Lindelöf
 
-![The Responsive image]()
+![The responive image](https://github.com/jlindeloef/carrotland/blob/main/readme_images/responsive.png)
 
 [Carrotland Game](https://carrotland-bf0212b24b7f.herokuapp.com/)
 
@@ -30,46 +30,39 @@ This game are for those who wants to relax and play a non complicated game.
 - As a user I want clear error messages to help the me enter valid input.
 
 
-## Website structure
-The website has four sections:
-+ **Home/About us:** I combined these two Sections mostly because of layout on the page. 
-+ **Courses:** A clear view of the courses the school has to offer and also prizing.
-+ **Sign up:** A sign up form to send to school with name, phonenumber, email and wich instrument/instruments that are in interest.
-+ **Footer:** With contact information and links to social media.
-
-### Colours
-**Background:** I decided to use a darkyellow background on the navigation section and the "About Us" section. I tried different variants of colour but found this as a working colour with the dark image in the logo and the white background colour from the "Courses" section below. The logo background is an image that I found suiting for the schools visions and philosophy. The "Courses" section, as i mention has a white background with content in boxes with borders as same darkyellow colour used before. The "Sign up" section has an image as background that I found as a good choice and the footer has the darkyellow colour.
-
-**The colors used was:**
-+ Darkyellow rgb(196, 174, 133- for background.
-+ White #FFF -used for the background and text.
-+ Black #000- For text and shadows.
-+ Turquoise #81cfd4- For the apply button.
-
 ### Technologies
 1. HTML - To create a basic site
 2. CSS - To create a nice, standout front-end and to give a great user experience
 3. Balsamiq - To create a wireframe
 
 ## Features
+This game was created by using python coding.
 
 ### Existing Features
 
-+ #### Navigation Bar
-  - The navigation bar will follow the user when it scrolls down through the website so you can easily navigate to where you want to go where ever you are on the website.
-  - The "Home/About Us"-button will take you to the top of the page where you also can read about the school.
++ #### Welcome
+  - Gives the user the story and the rules.
+  - The game starts and the user can begin to play.
 
- ![The Navigation bar.](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/navigationbar.jpg)
+ ![Welcome.]()
 
-+ #### Head Image with Logo
-  - The first you will notice when entering the website is the main image with a girl playing piano on stage with Onnstage Music School logo on the image.
-  - This section indroduces the very philosophy and strategy of the School, to learn but also to play music!
++ #### Game start
+  - An empty gameboard displays and a text that says "Find the carrots, you have 10 turns".
+  - The user types in which row and column they want to look for the carrot.
+  - It shows the remaining turns.
+  
 
-![The logo with image.](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/logo.png)
+![first input]()
 
-+ #### About Us
-  - Here are information about the school, from what ages they teach. But also their visions and what they think is important of learning music.
-  - The "About Us"- section is linked together with "Home" up in the navigation bar.
++ #### Feedback
+  After users input this will display above the gameboard:
+  If a carrot being found on the game board:
+  - Feedback:"CONGRATULATIONS! You found a carrot!"
+  If a carrot not being found on the game board:
+  - Feedback:"Sorry! No carrot"
+ Under the gameboard this will be displayed:
+  - Your remaining turns.
+  - New inputs for another turn.
 
 ![About us image](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/about-us.jpg)
 
