@@ -29,12 +29,6 @@ This game are for those who wants to relax and play a non complicated game.
 - As a user I want to get rewarded on each guess if I win.
 - As a user I want clear error messages to help the me enter valid input.
 
-
-### Technologies
-1. HTML - To create a basic site
-2. CSS - To create a nice, standout front-end and to give a great user experience
-3. Balsamiq - To create a wireframe
-
 ## Features
 This game was created by using python coding.
 
@@ -51,8 +45,7 @@ This game was created by using python coding.
   - The user types in which row and column they want to look for the carrot.
   - It shows the remaining turns.
   
-
-![first input]()
+![first input](https://github.com/jlindeloef/carrotland/blob/main/readme_images/firstdep.png)
 
 + #### Feedback
   After users input this will display above the gameboard:
