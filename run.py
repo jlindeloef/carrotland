@@ -47,7 +47,7 @@ class Carrots:
         Get users inputs in the game and responding to the inputs.
         """
         try:
-            row = input("Look for carrot on row(1-5)...: ")
+            row = input("Look for carrot on row(1-5)...: \n")
             if row not in '12345':
                 print("Not valid! Select a valid row(1-5).")
                 row = input("Look for carrot on row(1-5)...: \n")
