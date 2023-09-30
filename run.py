@@ -50,11 +50,11 @@ class Carrots:
             row = input("Look for carrot on row(1-5)...: ")
             if row not in '12345':
                 print("Not valid! Select a valid row(1-5).")
-                row = input("Look for carrot on row(1-5)...: ")
-            column = input("Choose a column(A-E): ").upper()
+                row = input("Look for carrot on row(1-5)...: \n")
+            column = input("Choose a column(A-E): \n").upper()
             if column not in "ABCDE":
                 print("Not valid! Select a valid column(A-E).")
-                column = input("Choose a column(A-E): ").upper()
+                column = input("Choose a column(A-E): \n").upper()
             return int(row) - 1, \
                 Board.letters_to_numbers(self)[column]
         except (ValueError, KeyError):
@@ -77,7 +77,7 @@ def game_over():
     """
     End game or loose
     """
-    user_input = input("Play again (Y/N)? ").upper()
+    user_input = input("Play again (Y/N)? \n").upper()
     if user_input == "Y":
         play_game()
     if user_input == "N":
