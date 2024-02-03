@@ -162,7 +162,7 @@ def get_row():
 def get_col():
   while True:
     try:
-      guess = int(input("Choose a column(A-E):"))
+      guess = int(input("Choose a column(1-5):"))
       if guess in range(1, col_size + 1):
         return guess - 1
       else:
