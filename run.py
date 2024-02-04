@@ -34,23 +34,6 @@ class Carrot:
       else:
         raise IndexError("Column is not in the land.")
 
-    if self.filled():
-      print_board(board)
-      print(" ".join(str(place) for place in self.placement))
-      raise IndexError("You searched there already")
-    else:
-      self.fillBoard()
-  
-  def filled(self):
-    for place in self.placement:
-      if board[place['row']][place['col']] == 1:
-        return True
-    return False
-  
-  def fillBoard(self):
-    for place in self.placement:
-      board[place['row']][place['col']] = 1
-
   def contains(self, location):
     for place in self.placement:
       if place == location:
@@ -101,7 +84,8 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
         * = Only leaves!
                             Good Luck!
 ======================================================================
-''') 
+''')
+  print("Find the carrots! You have 10 turns!\n")
   print("\n  " + " ".join(str(x) for x in range(1, col_size + 1)))
   for r in range(row_size):
     print(str(r + 1) + " " + " ".join(str(c) for c in board_array[r]))
@@ -197,7 +181,6 @@ def print_rules():
 ''')
 
 os.system('clear')
-print("Find the carrots! You have 10 turns!\n")
 print_board_start(board_display)
 
 
