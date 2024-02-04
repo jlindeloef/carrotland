@@ -2,7 +2,7 @@ from random import randint
 import os
 
 """
-Carrot class
+Carrot class.
 """
 class Carrot:
   def __init__(self, size, land, location):
@@ -57,10 +57,10 @@ col_size = 5
 num_carrots = 5
 max_carrot_size = 1
 min_carrot_size = 1
-num_turns = 25
+num_turns = 10
 
 """
-Create the carrot list
+Create the carrot list.
 """ 
 carrot_list = []
 
@@ -179,7 +179,9 @@ def print_rules():
                             Good Luck!
 ======================================================================
 ''')
-
+"""
+Play game.
+"""
 os.system('clear')
 print_board_start(board_display)
 
@@ -208,7 +210,7 @@ for turn in range(num_turns):
       carrot_hit = True
       board_display[guess_place['row']][guess_place['col']] = 'X'
       if carrot.found():
-        print("You found a carrot!")
+        print("You found a useful carrot!")
         carrot_list.remove(carrot)
       break
   if not carrot_hit:
