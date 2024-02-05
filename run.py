@@ -57,7 +57,7 @@ col_size = 5
 num_carrots = 5
 max_carrot_size = 1
 min_carrot_size = 1
-num_turns = 10
+num_turns = 25
 
 """
 Create the carrot list.
