@@ -210,7 +210,7 @@ for turn in range(num_turns):
       carrot_find = True
       board_display[guess_place['row']][guess_place['col']] = 'X'
       if carrot.found():
-        print("You found a useful carrot!")
+        print("You have found a carrot!")
         carrot_list.remove(carrot)
       break
   if not carrot_find:
