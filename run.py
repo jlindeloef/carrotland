@@ -4,6 +4,8 @@ import os
 """
 Carrot class.
 """
+
+
 class Carrot:
     def __init__(self, size, land, location):
         self.size = size
@@ -12,13 +14,13 @@ class Carrot:
             self.land = land
         else:
             raise ValueError("Value must be 'horizontal' or 'vertical'.")
-    
         if land == 'horizontal':
             if location['row'] in range(row_size):
                 self.placement = []
                 for index in range(size):
                     if location['col'] + index in range(col_size):
-                        self.placement.append({'row': location['row'], 'col': location['col'] + index})
+                        self.placement.append({'row': location['row'],
+                         'col': location['col'] + index})
                     else:
                         raise IndexError("Column is not in the land.")
             else:
@@ -28,7 +30,8 @@ class Carrot:
                 self.placement = []
                 for index in range(size):
                     if location['row'] + index in range(row_size):
-                        self.placement.append({'row': location['row'] + index, 'col': location['col']})
+                        self.placement.append({'row': location['row'] + index,
+                            'col': location['col']})
                     else:
                         raise IndexError("Row is not in the land.")
             else:
@@ -48,29 +51,30 @@ class Carrot:
                 raise RuntimeError("Board display inaccurate")
         return True
 
-  
+
 """
 Setting variables, number of rows, columns, turns and size.
-""" 
-row_size = 5 
-col_size = 5 
+"""
+row_size = 5
+col_size = 5
 num_carrots = 5
 max_carrot_size = 1
 min_carrot_size = 1
-num_turns = 25
+num_turns = 10
 
 """
 Create the carrot list.
-""" 
+"""
 carrot_list = []
 
 board = [[0] * col_size for x in range(row_size)]
 
 board_display = [["O"] * col_size for x in range(row_size)]
-
 """
 The functions
-""" 
+"""
+
+
 def print_board_start(board_array):
     print('''
 ========================================================================
@@ -91,17 +95,20 @@ There are 5 carrots left! Find them before the rowdy rabbit does!
         print(str(r + 1) + " " + " ".join(str(c) for c in board_array[r]))
     print()
 
-def print_board(board_array): 
-  print("\n  " + " ".join(str(x) for x in range(1, col_size + 1)))
-  for r in range(row_size):
-    print(str(r + 1) + " " + " ".join(str(c) for c in board_array[r]))
-  print()
+
+def print_board(board_array):
+    print("\n  " + " ".join(str(x) for x in range(1, col_size + 1)))
+    for r in range(row_size):
+        print(str(r + 1) + " " + " ".join(str(c) for c in board_array[r]))
+    print()
+
 
 def search_locations(size, land):
     locations = []
 
     if land != 'horizontal' and land != 'vertical':
-        raise ValueError("land must have a value of either 'horizontal' or 'vertical'.")
+        raise ValueError
+        ("land must have a value of either'horizontal' or 'vertical'.")
 
     if land == 'horizontal':
         if size <= col_size:
@@ -121,6 +128,7 @@ def search_locations(size, land):
     else:
         return locations
 
+
 def random_location():
     size = randint(min_carrot_size, max_carrot_size)
     land = 'horizontal' if randint(0, 1) == 0 else 'vertical'
@@ -129,8 +137,9 @@ def random_location():
     if locations == 'None':
         return 'None'
     else:
-        return {'location': locations[randint(0, len(locations) - 1)], 'size': size,\
-         'land': land}
+        return {'location': locations[randint(0,
+            len(locations) - 1)], 'size': size, 'land': land}
+
 
 def get_row():
     while True:
@@ -143,6 +152,7 @@ def get_row():
         except ValueError:
             print("Try again, look for carrot on row(1-5)...:")
 
+
 def get_col():
     while True:
         try:
@@ -154,16 +164,20 @@ def get_col():
         except ValueError:
             print("\nPlease enter a number")
 
+
 """
 Create the carrots
-""" 
+"""
+
+
 temp = 0
 while temp < num_carrots:
     carrot_info = random_location()
     if carrot_info == 'None':
         continue
     else:
-        carrot_list.append(Carrot(carrot_info['size'], carrot_info['land'], carrot_info['location']))
+        carrot_list.append(Carrot(carrot_info['size'],
+            carrot_info['land'], carrot_info['location']))
         temp += 1
 del temp
 
@@ -179,9 +193,12 @@ def print_rules():
                             Good Luck!
 ======================================================================
 ''')
+
+
 """
 Play game.
 """
+
 os.system('clear')
 print_board_start(board_display)
 
@@ -190,13 +207,13 @@ for turn in range(num_turns):
     print("Turn:", turn + 1, "of", num_turns)
     print("carrots left:", len(carrot_list))
     print()
-  
+
     guess_place = {}
     while True:
         guess_place['row'] = get_row()
         guess_place['col'] = get_col()
         if board_display[guess_place['row']][guess_place['col']] == 'X' or \
-            board_display[guess_place['row']][guess_place['col']] == '*':
+                board_display[guess_place['row']][guess_place['col']] == '*':
             print("\nYou guessed that one already.")
         else:
             break
@@ -218,13 +235,13 @@ for turn in range(num_turns):
         print("Sorry! No carrot!")
 
     print_board(board_display)
-  
+
     if not carrot_list:
         break
 
 """
 End game
-""" 
+"""
 if carrot_list:
     print("Sorry! The rabbit found the carrots before you did!")
     print('Play again? Press "RUN PROGRAM" above.')
