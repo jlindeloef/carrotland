@@ -57,7 +57,7 @@ col_size = 5
 num_carrots = 5
 max_carrot_size = 1
 min_carrot_size = 1
-num_turns = 25
+num_turns = 10
 
 """
 Create the carrot list.
@@ -203,17 +203,17 @@ for turn in range(num_turns):
 
   os.system('clear')
   print_rules()
-  carrot_hit = False
+  carrot_find = False
   for carrot in carrot_list:
     if carrot.contains(guess_place):
       print("YEAH!")
-      carrot_hit = True
+      carrot_find = True
       board_display[guess_place['row']][guess_place['col']] = 'X'
       if carrot.found():
         print("You found a useful carrot!")
         carrot_list.remove(carrot)
       break
-  if not carrot_hit:
+  if not carrot_find:
     board_display[guess_place['row']][guess_place['col']] = '*'
     print("Sorry! No carrot!")
 
