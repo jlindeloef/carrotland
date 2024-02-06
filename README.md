@@ -1,12 +1,12 @@
 # Carrotland
-## Portfolio project : Carrotland Game
+## Portfolio project 3 : Carrotland Game
 Carrot Land is a fun game for all ages and for those who likes carrots! You are up for a challenge to find carrots before the rowdy rabbit does!
 
 **Good Luck!**
 
 Johan Lindelöf
 
-![The responive image](https://github.com/jlindeloef/carrotland/blob/main/readme_images/responsive.png)
+![The responsive](https://github.com/jlindeloef/carrotland/blob/main/readme_images/responsive.png)
 
 [Carrotland Game](https://carrotland-bf0212b24b7f.herokuapp.com/)
 
@@ -20,11 +20,11 @@ I found a couple of games that I played to get in mind what a user wants while p
 To create and plan the structure of the game I made a flowchart which takes me through the game and helped me with the coding. It shows the logic path throughout the game
 and can help you when you read this readme.
 
-![Flowchart](https://github.com/jlindeloef/carrotland/blob/main/readme_images/carrotland.png)
+![Flowchart](https://github.com/jlindeloef/carrotland/blob/main/readme_images/carrotland.fc.png)
 
 
 ### UX
-This game are for those who wants to relax and play a non complicated game.
+This game are for those who wants to relax and play a non complicated game. I decided to only use numbers in both column and row because my daughter (5 years old) found it easier to only play with the num lock compare to shift between both letters and numbers that she don´t know so well yet.
 
 ### Users stories
 - As a user I want to enjoy playing Carrotland.
@@ -37,7 +37,7 @@ This game are for those who wants to relax and play a non complicated game.
 Technologies:
 - Python to create the game.
 - app.diagram.net - To create the flowchart.
-- Codeanywhere to write the code.
+- Gitpod to write the code.
 - github to store the code
 
 Library:
@@ -58,8 +58,12 @@ Library:
   - An empty gameboard displays and a text that says "Find the carrots, you have 10 turns".
   - The user types in which row and column they want to look for the carrot.
   - It shows the remaining turns.
-  
-![first input](https://github.com/jlindeloef/carrotland/blob/main/readme_images/firstdep.png)
+    
+![First gameboard](https://github.com/jlindeloef/carrotland/blob/main/readme_images/first_game_board.png)
+
+  - After the first turn the user will not get the whole story from the storyboard. The information narrows down to:
+
+![second turn](https://github.com/jlindeloef/carrotland/blob/main/readme_images/afterfirstinput.png)
 
 + #### Feedback during the game
 After users input this will display above the gameboard:
@@ -67,7 +71,7 @@ If a carrot being found on the gameboard:
 
 Feedback:
 
-![Found carrot](https://github.com/jlindeloef/carrotland/blob/main/readme_images/foundcarrot.png)
+![Found carrot](https://github.com/jlindeloef/carrotland/blob/main/readme_images/found_carrot.png)
 
 If a carrot not being found on the game board:
 
@@ -79,15 +83,13 @@ Feedback:
      - Your remaining turns.
      - New inputs for another turn.
 
-![second turn](https://github.com/jlindeloef/carrotland/blob/main/readme_images/secondturn.png)
+![Second turn](https://github.com/jlindeloef/carrotland/blob/main/readme_images/second_turn.png)
 
 If you press an invalid key part from expected -the game will tell the user.
 
-![Invalid input](https://github.com/jlindeloef/carrotland/blob/main/readme_images/not%20valid%20input.png)
+![Invalid column](https://github.com/jlindeloef/carrotland/blob/main/readme_images/not_valid_column.png)
 
-![Invalid column](https://github.com/jlindeloef/carrotland/blob/main/readme_images/not%20valid%20column.png)
-
-![Invalid row](https://github.com/jlindeloef/carrotland/blob/main/readme_images/Not%20valid%20row.png)
+![Invalid row](https://github.com/jlindeloef/carrotland/blob/main/readme_images/Not_valid_row.png)
 
 
 + #### Game end
@@ -97,58 +99,57 @@ Either user win or loose, the user will always get the question if to play again
 ##### Win game
 If the user finds the 5 carrots before the 10th turn it will win the game.
 
-![Win game](https://github.com/jlindeloef/carrotland/blob/main/readme_images/win.png)
+![Win game](https://github.com/jlindeloef/carrotland/blob/main/readme_images/win_game.png)
 
 ##### Loose game
 If the user does not find the carrots during the 10 turns it will be Game over.
 
-![Loose game](https://github.com/jlindeloef/carrotland/blob/main/readme_images/loose.png)
+![Loose game](https://github.com/jlindeloef/carrotland/blob/main/readme_images/loose_game.png)
 
 ##### Play again?
 If the user decides after playing the game to play again it will start from the beginning.
-If the user decides to not play the game it will exit the game.
-
-![Not play again](https://github.com/jlindeloef/carrotland/blob/main/readme_images/playagainno.png)
 
 + #### Gameboard
-The gameboard starts empty with 5 rows(1-5) and 5 columns(A-E).
+The gameboard starts empty with 5 rows(1-5) and 5 columns(1-5).
   
-![blank board](https://github.com/jlindeloef/carrotland/blob/main/readme_images/board.png)
+![Board](https://github.com/jlindeloef/carrotland/blob/main/readme_images/game_board.png)
   
 After the user enters their first input and press enter, the board displays the input for the next turn.
 The board displays:
-  - X = If user finds a carrot.
-  - Line = If user do not find a carrot.
+  - "X" = If user finds a carrot.
+  - "*" = If user do not find a carrot.
 
-![xboard](https://github.com/jlindeloef/carrotland/blob/main/readme_images/xonboard.png)
+![xonboard](https://github.com/jlindeloef/carrotland/blob/main/readme_images/x_on_board.png)
   
 
 ### Features to Implement
 Further there could be an input that gives the alternative to quit when ever the user want to.
 To enter a name and make a scoreboard for those who plays the game.
+I would also add more features to the game as I started in my coding. Add different sizes to carrots, or also to find rabbits. Because of my timelimit I will continue to work on this as time follows.
 
 ## Testing
-I tested the game in Heroku and Codeanywhere terminal. I validated the following:
-- Game start
+I did testing on the game. You can read it [here.](https://github.com/jlindeloef/carrotland/blob/main/Testing.md)
+It contains:
 - What happens if right input
 - What happens if wrong input
 - When win games
 - when loose game
-- Invalid input
-The both terminal shows no errors, only a warning that doesn´t affect the game.
-
-![Linter](https://github.com/jlindeloef/carrotland/blob/main/readme_images/linter%20validator.png)  ![Codeanywhere](https://github.com/jlindeloef/carrotland/blob/main/readme_images/codeanywhere.png)  
+- Invalid inputs
 
 ### Validator Testing
 + CI python Linter
 + Heroku terminal
-+ Codeanywhere terminal
++ Gitpod terminal
+
+![CI linter](https://github.com/jlindeloef/carrotland/blob/main/readme_images/ci_linter_test.png)
+
+The CI python Linter showed warnings that I tried to fix but I did not succed. The warnings does not effect the game.
 
 ### Bugs
 + Solved bugs
   - A variable showed a warning of being unused. I solved it by unnaming the variable with a underscore.
 + Unsolved bugs
-  - The game has no end line as shown in the testing images.
+  - Only the ones mentioned in the CI python linter. But the errors will not effect the game.
  
 ## Deployment
   I followed the steps written below to deploy my project to Heroku:
@@ -182,6 +183,8 @@ The board layout I credit Garrett Broughton on youtube.
 Ideas were also taken from The Code Institute's learning plattform and projects.
 
 ### Acknowledgements
-My mentor Medale Oluwafemi for guidance and inspiration and reviewing.
-David Calikes for supporting and cheering!
+My mentor Gareth McGirr for guidance and inspiration and reviewing.
+Also a great thanks to Code Institutes tutors and Student support who has been a great help during this project.
 Ideas were taken from The Code Institute's learning plattform and projects.
+
+
