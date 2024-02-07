@@ -15,7 +15,9 @@ Johan Lindelöf
 ## About the game
 ### Project planning
 This is my first time building a game so after I decided I wanted to create a game with something visual, not only plain text, I searched around for games that had a gameboard and was created only with python. 
-I found a couple of games that I played to get in mind what a user wants while playing the game.
+I found a couple of games that I played to get in mind what a user wants while playing the game. In my first version of the game I had numeric rows and letters for columns but I decide to change to only numeric for the second version.
+The reason is that my daughter who is five years old loves to play the game but found it hard to use first numbers then change to letters. When I changed to only numbers it becaame much easier for her and it became more flow in the game.
+
 
 To create and plan the structure of the game I made a flowchart which takes me through the game and helped me with the coding. It shows the logic path throughout the game
 and can help you when you read this readme.
@@ -24,7 +26,7 @@ and can help you when you read this readme.
 
 
 ### UX
-This game are for those who wants to relax and play a non complicated game. I decided to only use numbers in both column and row because my daughter (5 years old) found it easier to only play with the num lock compare to shift between both letters and numbers that she don´t know so well yet.
+This game are for those who wants to relax and play a non complicated game. I decided to only use numbers in both column and row as earlier mentioned to maybe become easier for the younger player to find it fun.
 
 ### Users stories
 - As a user I want to enjoy playing Carrotland.
