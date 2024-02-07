@@ -37,7 +37,7 @@ class Carrot:
             else:
                 raise IndexError("Column is not in the land.")
 
-    def contains(self, location):
+    def holds(self, location):
         for place in self.placement:
             if place == location:
                 return True
@@ -53,7 +53,7 @@ class Carrot:
 
 
 """
-Setting variables, number of rows, columns, turns and size.
+Setting variables, number of rows, columns, turns and size (not in use yet).
 """
 row_size = 5
 col_size = 5
@@ -222,7 +222,7 @@ for turn in range(num_turns):
     print_rules()
     carrot_find = False
     for carrot in carrot_list:
-        if carrot.contains(guess_place):
+        if carrot.holds(guess_place):
             print("YEAH!")
             carrot_find = True
             board_display[guess_place['row']][guess_place['col']] = 'X'
