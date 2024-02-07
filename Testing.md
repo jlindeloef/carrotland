@@ -44,4 +44,4 @@ Full testing was made in the following program:
 | Choose a column(1-5) | When user add a letter or a symbol, an error message should tell the user to try again and ask for a number between 1-5.  | Enter a letter and symbol | The error message display and user is asked for a number between 1-5|Pass |
 | Choose a column(1-5) | When user add a blank space, an error message should tell the user to try again and ask for a number between 1-5.  | Enter a blank space| The error message display and user is asked for a number between 1-5|Pass |
 | Board | |  |  |
-| Test the whole board | TEst the whole board with 25 turns so there are 5 carrots to be found and win message displays. | Play 25 turns, the whole board | There were 5 carrots and a win message display | Pass |
+| Test the whole board | Test the whole board with 25 turns so there are 5 carrots to be found and win message displays. | Play 25 turns, the whole board | There were 5 carrots and a win message display | Pass |
